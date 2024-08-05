@@ -82,9 +82,9 @@ Open the above Directus admin portal and Create a collection named `tasks` with 
 |-------------|------------|----------|--------------------------------------------------------|
 | id          | integer    | Yes      | Unique identifier for the task integer (auto-increment)|
 | title       | string     | Yes      | Title of the task (input)                              |
-| description | text       | No       | Description of the task (textarea)                     |
+| description | text       | Yes      | Description of the task (textarea)                     |
 | status      | integer    | Yes      | Status of the task (1 = Active, 0 = Inactive)          |
-| duedate     | dateTime   | No       | Due date of the task (Date)                            |
+| duedate     | dateTime   | Yes      | Due date of the task (Date)                            |
 
 ## Usage
 
