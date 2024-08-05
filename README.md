@@ -51,6 +51,7 @@ This Task Management App is built using Svelte and Flowbite-Svelte, providing a 
 1. **Install Directus**:
 
     Follow the official Directus [installation guide](https://docs.directus.io/getting-started/quickstart.html).
+    Select the NPM Installation and follow the steps.
 
 2. **Configure Directus**:
 
@@ -85,6 +86,8 @@ Open the above Directus admin portal and Create a collection named `tasks` with 
 | description | text       | Yes      | Description of the task (textarea)                     |
 | status      | integer    | Yes      | Status of the task (1 = Active, 0 = Inactive)          |
 | duedate     | dateTime   | Yes      | Due date of the task (Date)                            |
+
+This will create a new table - tasks in provided database in the MySQL.
 
 ## Usage
 
