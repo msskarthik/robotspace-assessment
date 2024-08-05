@@ -63,17 +63,28 @@ This Task Management App is built using Svelte and Flowbite-Svelte, providing a 
     ```
     - Select MySQL as the database driver and provide the local MySQL credentials to connect.
     - Provide an email and password for setting up admin access to Directus.
-3. **Create Collections**:
 
-    - Create the necessary collections (tables) for tasks and users in Directus.
-
-4. **Start Directus**:
+3. **Start Directus**:
 
     ```bash
     npx directus start
     ```
 
-5. **Open your browser** and navigate to [http://localhost:8055/admin/login](http://localhost:8055/admin/login).
+4. **Open your browser** and navigate to [http://localhost:8055/admin/login](http://localhost:8055/admin/login).
+
+5. **Create Collections**:
+
+    ### Tasks Collection Schema
+
+Open the above Directus admin portal and Create a collection named `tasks` with the following fields:
+
+| Field Name  | Type       | Required | Description                                            |
+|-------------|------------|----------|--------------------------------------------------------|
+| id          | integer    | Yes      | Unique identifier for the task integer (auto-increment)|
+| title       | string     | Yes      | Title of the task (input)                              |
+| description | text       | No       | Description of the task (textarea)                     |
+| status      | integer    | Yes      | Status of the task (1 = Active, 0 = Inactive)          |
+| duedate     | dateTime   | No       | Due date of the task (Date)                            |
 
 ## Usage
 

@@ -84,7 +84,7 @@
                     <TableBodyCell class="text-white lg:table-cell custom-description-class">
                         {task.description}
                     </TableBodyCell>
-                    <TableBodyCell><Select on:change={(e) => updateTask(e, task.id)} class="bg-gray-700 rounded-lg border-none text-white w-1/2" items={statusValues} size="sm" bind:value={task.status} /></TableBodyCell>
+                    <TableBodyCell><Select on:change={(e) => updateTask(e, task.id)} class="bg-gray-700 rounded-lg border-none text-white w-1/2 min-w-[6rem]" items={statusValues} size="sm" bind:value={task.status} /></TableBodyCell>
                     <TableBodyCell class="text-white">
                         {task.duedate}
                     </TableBodyCell>
