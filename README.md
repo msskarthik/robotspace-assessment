@@ -28,8 +28,8 @@ This Task Management App is built using Svelte and Flowbite-Svelte, providing a 
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-username/task-management-app.git
-    cd task-management-app
+    git clone https://github.com/msskarthik/robotspace-assessment.git
+    cd robotspace-assessment
     ```
 
 2. **Install dependencies**:
@@ -50,12 +50,13 @@ This Task Management App is built using Svelte and Flowbite-Svelte, providing a 
 
 1. **Install Directus**:
 
-    Follow the official Directus [installation guide](https://docs.directus.io/getting-started/installation.html).
+    Follow the official Directus [installation guide](https://docs.directus.io/getting-started/quickstart.html).
 
 2. **Configure Directus**:
 
     - Set up your MySQL database.
     - Create a new Directus project and connect it to your MySQL database.
+    
     ```bash
         npm init directus-project@latest directus-api
     ```
