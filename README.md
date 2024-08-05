@@ -56,11 +56,13 @@ This Task Management App is built using Svelte and Flowbite-Svelte, providing a 
 
     - Set up your MySQL database.
     - Create a new Directus project and connect it to your MySQL database.
-    
+    - Added configuration file for the directus in directus-config folder.
+
     ```bash
         npm init directus-project@latest directus-api
     ```
-
+    - Select MySQL as the database driver and provide the local MySQL credentials to connect.
+    - Provide an email and password for setting up admin access to Directus.
 3. **Create Collections**:
 
     - Create the necessary collections (tables) for tasks and users in Directus.
